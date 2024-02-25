@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Navbar from './Navbar';
 import Header from './Header';
+import Body from './Body';
 import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Navbar/>
     <Header/>
+    <Body/>
     <App />
     <Footer/>
   </React.StrictMode>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import chicago from './images/chicago.jpeg';
+
 function Header () {
     const getDay = (day) => {
         switch(day) {

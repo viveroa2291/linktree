@@ -1,6 +1,8 @@
 .date {
+    margin-top: 5rem;
     text-align: center;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 .picture {
     display: block;
