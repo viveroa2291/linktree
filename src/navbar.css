@@ -1,0 +1,20 @@
+.home-button {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.music-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.movie-button {
+    position: absolute;
+    right: 7rem;
+    top: 1rem;
+}
+.music {
+    display: none;
+}

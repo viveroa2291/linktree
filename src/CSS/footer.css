@@ -1,0 +1,8 @@
+.bottom-text, .copyright {
+    text-align: center;
+    bottom: 0;
+    color: white;
+}
+.copyright {
+    font-size: 12px;
+}

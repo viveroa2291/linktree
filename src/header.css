@@ -1,0 +1,28 @@
+.date {
+    text-align: center;
+    color: white;
+}
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.picture .header-pic {
+    margin-top: -285px;
+    margin-left: -466px;
+    transform: scale(.25);    
+    border-radius: 50%; 
+}
+.header-name {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-hr {
+    width: 5%;
+}
