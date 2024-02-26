@@ -3,8 +3,29 @@
     text-align: center;
 }
 .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
     color: white;
 }
-.link {
-    margin-left: 1rem;
+.link {    
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    text-decoration: none; 
+    margin-right: .5rem; 
+    border: solid white 1px;
+    padding: .5rem;
+}
+.link:hover {
+    color: black;
+    background-color: white;
+}
+.link:hover {
+    cursor: pointer;
 }
