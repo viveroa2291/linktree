@@ -29,3 +29,20 @@
 .link:hover {
     cursor: pointer;
 }
+.hamburger .hr1, .hr2, .hr3 {
+    width: 25px;
+    margin: 5px 0;
+    border: 2px solid black;
+}
+.hr1, .hr2, .hr3 {
+    transition: 1s;
+}
+.change .hr1 {
+    transform: rotate(-45deg) translate(-5px, 7px); 
+  }
+.change .hr2 {
+    opacity: 0;
+} 
+.change .hr3 {
+    transform: rotate(45deg) translate(-5px, -8px); 
+}

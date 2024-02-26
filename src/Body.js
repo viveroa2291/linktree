@@ -23,7 +23,7 @@ function Body() {
             <p className='description'>E-mail for all business inquiries</p>
             <p className='description'><FontAwesomeIcon icon="envelope"/> adan.vivero1@gmail.com</p>
             <div className='links'>
-                <a className='link' href='#finance' onClick={() => handleSectionClick('finance')}>Finance</a>
+                <p className='link' onClick={() => handleSectionClick('finance')}>Finance</p>
                 <a className='link' href='#code' onClick={() => handleSectionClick('code')}>Code</a>
                 <a className='link' href='#sponsors' >Sponsors</a>
                 <a className='link' href='#connect'>Connect</a>
@@ -32,7 +32,8 @@ function Body() {
                 <a className='link' href='#projects'>Projects</a>
                 <a className='link' href='#lenses'>Lenses</a>
                 <a className='link' href='#content'>Content</a>
-                {activeSection === 'finance' && <Finance />}
+            </div>
+                {activeSection === 'finance' && <Finance/>}
                 {activeSection === 'code' && <Code/>}
                 {activeSection === 'sponsors' && <Sponsors/>}
                 {activeSection === 'connect' && <Connect/>}
@@ -41,7 +42,7 @@ function Body() {
                 {activeSection === 'projects' && <Projects/>}
                 {activeSection === 'lenses' && <Lenses/>}
                 {activeSection === 'content' && <Content/>}
-            </div>
+
         </div>
     )
 }
