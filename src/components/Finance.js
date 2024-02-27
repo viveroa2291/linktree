@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import '../CSS/finance.css';
+import { SocialIcon } from 'react-social-icons';
 function Finance () {
-    const [isArticleVisible, setArticleVisible] = useState(false);
-
-    const toggleArticle = () => {
-      setArticleVisible(!isArticleVisible);
+    const [robinhoodArticle, setRobinhood] = useState(false);
+    const [webullArticle, setWebull] = useState(false);
+    const toggleRobinhood = () => {   
+        setRobinhood(!robinhoodArticle);
     };
+    const toggleWebull = () => {
+        setWebull(!webullArticle);
+    }
     const rotateHamburger = () => {
         const hamburger = document.getElementById('hamburger');
         hamburger.classList.toggle('change');
@@ -30,13 +34,13 @@ function Finance () {
                         <path d="m42.406 11.427h2.43v13.275h-2.43z"/></g></g>
                 </svg>
                 <a class="finance-text robinhood-text" href="https://join.robinhood.com/adanv103">Claim FREE Stock</a>
-                <div id="hamburger" className={`hamburger ${isArticleVisible ? 'change' : ''}`} onClick={() => { rotateHamburger(); toggleArticle();}}>
+                <div id="hamburger" className={`hamburger ${robinhoodArticle ? 'change' : ''}`} onClick={() => { rotateHamburger(); toggleRobinhood();}}>
                         <hr class="hr1" id="robinhood-selector"/>
                         <hr class="hr2"/>
                         <hr class="hr3"/>
                 </div>
             </span>
-            <article className={`finance-article ${isArticleVisible ? 'visible' : ''}`} id="robinhood-article">
+            <article className={`finance-article ${robinhoodArticle ? 'visible' : ''}`} id="robinhood-article">
                     <p class="finance-paragraph">Sign up using my link to get a FREE stock on robinhood.</p>
                     <hr class="finance-hr"/>
                     <ul>
@@ -76,11 +80,78 @@ function Finance () {
                     </g>
                 </svg>
                 <a href="https://www.webull.com/activity?inviteCode=KCUq5teUm9Wv&source=NovRefer3" class="finance-text webull-text">Get up to 12 Free Stocks</a>
+                <div id="hamburger2" className={`hamburger ${webullArticle ? 'change' : ''}`} onClick={() => { rotateHamburger(); toggleWebull();}}>
+                    <hr class="hr1" id="webull-selector"/>
+                    <hr class="hr2"/>
+                    <hr class="hr3"/>
+                </div> 
             </span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <article className={`finance-article ${webullArticle ? 'visible' : ""}`} id="webull-article">
+                <p class="finance-paragraph">When You Open and Fund a New Account</p>
+                <hr class="finance-hr"/>
+                    <ul>
+                        <li>Open an account with Webull to get your 2 free fractional shares each valued up to $300!</li>
+                        <li>Deposit any amount to receive 4 - 10 free fractional shares each valued up to $3000.</li>
+                    </ul>
+            </article>       
+            <span className='finance-body'>
+            <svg class="coinbase" role="img" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.844 11.053c-.872 0-1.553.662-1.553 1.548s.664 1.542 1.553 1.542c.889 0 1.564-.667 1.564-1.547 0-.875-.664-1.543-1.564-1.543zm.006 2.452c-.497 0-.86-.386-.86-.904 0-.523.357-.909.854-.909.502 0 .866.392.866.91 0 .517-.364.903-.86.903zm1.749-1.778h.433v2.36h.693V11.11H6.599zm-5.052-.035c.364 0 .653.224.762.558h.734c-.133-.713-.722-1.197-1.49-1.197-.872 0-1.553.662-1.553 1.548 0 .887.664 1.543 1.553 1.543.75 0 1.351-.484 1.484-1.203h-.728a.78.78 0 01-.756.564c-.502 0-.855-.386-.855-.904 0-.523.347-.909.85-.909zm18.215.622l-.508-.075c-.242-.035-.415-.115-.415-.305 0-.207.225-.31.53-.31.336 0 .55.143.595.379h.67c-.075-.599-.537-.95-1.247-.95-.733 0-1.218.375-1.218.904 0 .506.317.8.958.892l.508.075c.249.034.387.132.387.316 0 .236-.242.334-.577.334-.41 0-.641-.167-.676-.42h-.681c.064.581.52.99 1.35.99.757 0 1.26-.346 1.26-.938 0-.53-.364-.806-.936-.892zM7.378 9.885a.429.429 0 00-.444.437c0 .254.19.438.444.438a.429.429 0 00.445-.438.429.429 0 00-.445-.437zm10.167 2.245c0-.645-.392-1.076-1.224-1.076-.785 0-1.224.397-1.31 1.007h.687c.035-.236.22-.432.612-.432.352 0 .525.155.525.345 0 .248-.317.311-.71.351-.531.058-1.19.242-1.19.933 0 .535.4.88 1.034.88.497 0 .809-.207.965-.535.023.293.242.483.548.483h.404v-.616h-.34v-1.34zm-.68.748c0 .397-.347.69-.769.69-.26 0-.48-.11-.48-.34 0-.293.353-.373.676-.408.312-.028.485-.097.572-.23zm-3.679-1.825c-.386 0-.71.162-.94.432V9.856h-.693v4.23h.68v-.391c.232.282.56.449.953.449.832 0 1.461-.656 1.461-1.543 0-.886-.64-1.548-1.46-1.548zm-.103 2.452c-.497 0-.86-.386-.86-.904 0-.517.369-.909.865-.909.503 0 .855.386.855.91 0 .517-.364.903-.86.903zm-3.187-2.452c-.45 0-.745.184-.919.443v-.385H8.29v2.975h.693v-1.617c0-.455.289-.777.716-.777.398 0 .647.282.647.69v1.704h.692v-1.755c0-.748-.386-1.278-1.142-1.278zM24 12.503c0-.851-.624-1.45-1.46-1.45-.89 0-1.542.668-1.542 1.548 0 .927.698 1.543 1.553 1.543.722 0 1.287-.426 1.432-1.03h-.722c-.104.264-.358.414-.699.414-.445 0-.78-.276-.854-.76H24v-.264zm-2.252-.23c.11-.414.422-.615.78-.615.392 0 .693.224.762.615Z"/>
+                    </svg>
+                    <a href="https://coinbase.com/join/vivero_mwd" class="finance-text coinbase-text"> Claim FREE $10</a>
+                    <div id="hamburger3" class="hamburger" >
+                        <hr class="hr1" id="coinbase-selector"/>
+                        <hr class="hr2"/>
+                        <hr class="hr3"/>
+                    </div>
+            </span>
+            <article class="finance-article" id="coinbase-article">
+                <p class="finance-paragraph">Sign up using my coinbase link to get FREE $10.</p>
+                <hr class="finance-hr"/>
+                <ul>
+                    <li>Sign up for a Coinbase account using my unique referral link and make an eligible crypto trade and we’ll both receive the bonus.</li>
+                </ul>
+            </article>    
+            <span className='finance-body'>
+                <svg class="pi" viewBox="176.20000000000005 47.4 530.8 530.7" xmlns="http://www.w3.org/2000/svg" width="30" height="50"><circle cx="441.6" cy="312.8" fill="none" r="227.4"/><g fill="#f6b133">
+                    <path d="M441.6 47.4c-146.6 0-265.4 118.8-265.4 265.4S295 578.1 441.6 578.1 707 459.3 707 312.7 588.1 47.4 441.6 47.4zm0 492.8c-125.6 0-227.4-101.8-227.4-227.4S316 85.4 441.6 85.4 669 187.2 669 312.8 567.2 540.2 441.6 540.2z"/><path d="M412 214h-34.5c-2.8 0-5-2.3-5-5v-25.2c0-2.8 2.3-5 5-5H412c2.8 0 5 2.3 5 5V209c.1 2.7-2.2 5-5 5zM493.5 214H459c-2.8 0-5-2.3-5-5v-25.2c0-2.8 2.3-5 5-5h34.5c2.8 0 5 2.3 5 5V209c0 2.7-2.2 5-5 5zM340.5 313.7h-45.4v-32.3s1.8-44.6 43.7-45.2h191.4v-26.3h45.6v25.4s-1.2 45.9-43.4 46.5l-33.8.9.5 156.2s.5 2.6-2.6 4.3l-35.2 12.5s-7.8 3.2-8.1-4.7V282H418v155.3s1 4.6-4.1 6.8l-32.3 11.4s-10.1 3.8-10-6.3V281.7h-30.9z"/></g>
+                </svg>
+                <a href="https://minepi.com/avivero" class="finance-text pi-text">Mine Pi on your phone</a>
+                <div id="hamburger3" class="hamburger" onclick="pi(); myRotate(this);">
+                    <hr class="hr1" id="pi-selector"/>
+                    <hr class="hr2"/>
+                    <hr class="hr3"/>
+                </div>
+            </span>
+            <article class="finance-article" id="pi-article">
+                <p class="finance-paragraph">Download Pi Network using my referral link and mine a larger percentage of Pi everyday.</p>
+                <hr class="finance-hr"/>
+                    <ul>
+                        <li>Pi is a cryptocurrency that is still in its mining phase.</li>
+                        <li>Pi makes crypto mining easy</li>
+                        <li>Breakthrough tech allows you to mine Pi on your phone without draining your battery.</li>
+                        <li>Keep your money! Pi is free. </li>
+                        <li>All you need is an invitation from an existing trusted member on the network.</li> 
+                        <li>If you have an invitation you can download the mobile app below.</li>
+                    </ul>
+            </article>   
+            <span className='finance-body'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="app-icon cashapp" viewBox="0 0 64 75"><g fill-rule="nonzero" fill="#FFF">
+                    <path d="M41.7 0c6.4 0 9.6 0 13.1 1.1a13.6 13.6 0 0 1 8.1 8.1C64 12.7 64 15.9 64 22.31v19.37c0 6.42 0 9.64-1.1 13.1a13.6 13.6 0 0 1-8.1 8.1C51.3 64 48.1 64 41.7 64H22.3c-6.42 0-9.64 0-13.1-1.1a13.6 13.6 0 0 1-8.1-8.1C0 51.3 0 48.1 0 41.69V22.3c0-6.42 0-9.64 1.1-13.1a13.6 13.6 0 0 1 8.1-8.1C12.7 0 15.9 0 22.3 0h19.4z" fill="#00D632"/><path d="M42.47 23.8c.5.5 1.33.5 1.8-.0l2.5-2.6c.53-.5.5-1.4-.06-1.94a19.73 19.73 0 0 0-6.72-3.84l.79-3.8c.17-.83-.45-1.61-1.28-1.61h-4.84a1.32 1.32 0 0 0-1.28 1.06l-.7 3.38c-6.44.33-11.9 3.6-11.9 10.3 0 5.8 4.51 8.29 9.28 10 4.51 1.72 6.9 2.36 6.9 4.78 0 2.49-2.38 3.95-5.9 3.95-3.2 0-6.56-1.07-9.16-3.68a1.3 1.3 0 0 0-1.84-.0l-2.7 2.7a1.36 1.36 0 0 0 .0 1.92c2.1 2.07 4.76 3.57 7.792 4.4l-.74 3.57c-.17.83.44 1.6 1.27 1.61l4.85.04a1.32 1.32 0 0 0 1.3-1.06l.7-3.39C40.28 49.07 45 44.8 45 38.57c0-5.74-4.7-8.16-10.4-10.13-3.26-1.21-6.08-2.04-6.08-4.53 0-2.42 2.63-3.38 5.27-3.38 3.36 0 6.59 1.39 8.7 3.29z" fill="#FFF"/></g>
+                </svg>
+                <a href="https://cash.app/app/HWRTRHT" class="finance-text cashapp-text">$adanvivero (Get $5)</a>
+                <div id="hamburger3" class="hamburger" onclick="cashapp(); myRotate(this);">
+                    <hr class="hr1" id="cashapp-selector"/>
+                    <hr class="hr2"/>
+                    <hr class="hr3"/>
+                </div>
+            </span>
+            <span className='finance-body'>
+                <svg class="venmo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.6C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.8,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM278,387H174.32L132.75,138.44l90.75-8.62,22,176.87c20.53-33.45,45.88-86,45.88-121.87,0-19.62-3.36-33-8.61-44L365.4,124.1c9.56,15.78,13.86,32,13.86,52.57C379.25,242.17,323.34,327.26,278,387Z" fill="blue"></path>
+                </svg>
+                <a href="https://account.venmo.com/u/Adan-Vivero" class="finance-text venmo-text">@Adan-Vivero</a>
+            </span>
          </div>
     )
 }
