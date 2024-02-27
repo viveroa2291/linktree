@@ -1,3 +1,32 @@
+# Linktree
+A personalized linktree page created by me that includes all the links to my social media, threads, code, or other forums.
+
+Social Media Site including links to my projects and ways to get in contact with me.
+
+# Tech used: ![ReactBadge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+My learning was focused on making a simple UI that resembled a linktree with a smooth UX added with a music theme for the page.
+
+# Optimizations
+
+To improve this website, I plan on
+
+Faster rendering on the images of the page for the mobile design. It might be complicated because of how it is set up but will be something I will look into.
+Clean up the design on the lenses with the grid layout.
+Implement a round image for my main image of me for the mobile design. Right now there is an oval.
+
+# Lessons Learned:
+
+<ul>
+  <li>Styling issue with centering the text. The solution was to add a <div> tag around the <SocialIcon> tags in order to make the text center and position that <div> to be absolute. </li>
+</ul>
+
+# More Projects
+<a href="https://viveroa2291.github.io/Cancun/">Cancun Mexican Grill</a>
+<br></br>
+<a href="https://viveroa2291.github.io/Developer-Site/">Developer Site</a>
+<br></br>
+<a href="https://viveroa2291.github.io/Tic-Tac-Toe/">Tic Tac Toe Site</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
