@@ -25,13 +25,13 @@ function Body() {
             <div className='links'>
                 <p className='link' onClick={() => handleSectionClick('finance')}>Finance</p>
                 <a className='link' href='#code' onClick={() => handleSectionClick('code')}>Code</a>
-                <a className='link' href='#sponsors' >Sponsors</a>
-                <a className='link' href='#connect'>Connect</a>
-                <a className='link' href='#social'>Social</a>
-                <a className='link' href='#media'>Media</a>
-                <a className='link' href='#projects'>Projects</a>
-                <a className='link' href='#lenses'>Lenses</a>
-                <a className='link' href='#content'>Content</a>
+                <a className='link' href='#sponsors' onClick={() => handleSectionClick('sponsors')}>Sponsors</a>
+                <a className='link' href='#connect' onClick={() => handleSectionClick('connect')}>Connect</a>
+                <a className='link' href='#social' onClick={() => handleSectionClick('social')}>Social</a>
+                <a className='link' href='#media' onClick={() => handleSectionClick('media')}>Media</a>
+                <a className='link' href='#projects' onClick={() => handleSectionClick('projects')}>Projects</a>
+                <a className='link' href='#lenses' onClick={() => handleSectionClick('lenses')}>Lenses</a>
+                <a className='link' href='#content' onClick={() => handleSectionClick('content')}>Content</a>
             </div>
                 {activeSection === 'finance' && <Finance/>}
                 {activeSection === 'code' && <Code/>}

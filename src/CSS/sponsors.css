@@ -1,0 +1,101 @@
+.sponsors-body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: solid yellow 2px;
+    width: 25%;
+    border-radius: 5px; 
+    height: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;  
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.sponsors-body:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: .75s; 
+}
+.sponsors-body:hover>.sponsors-text {
+    color: black;
+}
+.sponsors-article {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+    border-radius: 2px;
+    background-color: lightyellow;
+    color: black;
+    font-size: 16px;
+    padding: 5px 0;
+    margin-top: -1rem;
+    width: 24%;
+}
+.sponsors-paragraph {
+    font-size: 16px;
+}
+.sponsors-hr {
+    width: 50%;
+}
+.WJ {
+    position: absolute;
+    height: 30px;
+    align-self: center;
+    margin-left: 1.5rem;
+}
+.WJ-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ukraine {
+    position: absolute;
+    margin-left: 1rem;
+    align-self: center;
+}
+.ukraine-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fetch {
+    position: absolute;
+    height: 50px;
+    margin-left: 0rem;
+    margin-right: -.5rem;
+}
+.fetch-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.fetch-article>.sponsors-paragraph {
+    display: none;
+}
+@media (max-width: 1050px) {
+    .sponsors-body {
+        width: 75%;
+    }
+    .sponsors-article {
+        width: 74%;
+    }
+}
