@@ -1,16 +1,18 @@
 import React from "react";
 import '../CSS/connect.css';
-
+import {SocialIcon } from 'react-social-icons';
 function  Connect() {
     return (
         <div>
-            <span class="connect-body">
-                <svg class="linkedin linkedin-block" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="blue">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>                
+            <span class="connect-body">    
+                <SocialIcon class="linkedin linkedin-block" url="https://www.linkedin.com/in/adan-vivero-a93970156/"/>
                 <a href="https://www.linkedin.com/in/adan-vivero-a93970156/" class="connect-text linkedin-text">Linkedin</a>
+            </span>                
+            <span class="connect-body">
+                <SocialIcon className='icon' url="https://medium.com/@adan_vivero"/>
+                <a href="https://medium.com/@avivero6487" class="connect-text medium-text">Medium</a>
             </span>
-            <span>
+            <span className="connect-body">
                     <svg class="mathematics" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60">
                         <path fill="#CB181F" d="M32.2 5.1l-8.7 5.1-8.8-5.1L23.4 0z"/>
                         <path fill="#B6161C" d="M32.2 5.1v10.1l-8.7 5.1V10.2z"/>
@@ -28,6 +30,7 @@ function  Connect() {
                     </svg>
                     <a href="https://math.stackexchange.com/users/663376/adan-vivero" class="mathematics-text">Mathematics Exchange</a>
                 </span>
+
                 <span class="connect-body">
                     <svg class="mathematics" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60">
                           <path fill="gray" d="M32.2 5.1l-8.7 5.1-8.8-5.1L23.4 0z"/>
