@@ -91,6 +91,9 @@
 .fetch-article>.sponsors-paragraph {
     display: none;
 }
+.visible {
+    display: block;
+}
 @media (max-width: 1050px) {
     .sponsors-body {
         width: 75%;

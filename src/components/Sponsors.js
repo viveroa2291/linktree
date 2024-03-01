@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import '../CSS/sponsors.css';
-function Sponsors() {
+function Sponsors() {        
+    const [wjArticle, setWj] = useState(false);
+    const [fetchArticle, setFetch] = useState(false);
+
+    const toggleWJ = () => {
+        setWj(!wjArticle);
+    };
+    const toggleFetch = () => {
+        setFetch(!fetchArticle);
+    };
+    const rotateHamburger = (section) => {
+        const hamburger = document.getElementById(`${section}`);
+        hamburger.classList.add('change');
+    };
     return (
         <div>
             <span className="sponsors-body" id="wj">
@@ -27,13 +40,13 @@ function Sponsors() {
                 </g>
                 </svg>
                 <a href="https://www.wjdogtreats.com/" className="sponsors-text WJ-text">Free Shipping Code: ADAN</a>
-                <div id="hamburger2" className="hamburger" onClick="WJ(); myRotate(this);">
+                <div id="WJ" className={`hamburger ${wjArticle ? 'change' : ''}`} onClick={() => {toggleWJ(); rotateHamburger('WJ');}}>
                     <hr className="hr1" id="wj-selector"/>
                     <hr className="hr2"/>
                     <hr className="hr3"/>
                 </div> 
             </span>
-            <article className="sponsors-article" id="WJ-article">
+            <article className={`sponsors-article ${wjArticle ? 'visible' : ''}`}>
                 <p className="sponsors-paragraph">Healthy Dog Treats</p>
                 <hr className="sponsors-hr"/>
                 <ul>
@@ -82,13 +95,13 @@ function Sponsors() {
                     <path d="m123 31.4c0 .6-.3 1.2-.9 1.4s-1.2.1-1.6-.3-.6-1.1-.3-1.6.8-.9 1.4-.9c.4 0 .8.1 1 .4.2.2.4.6.4 1zm-2.6 0c0 .3.1.6.3.8s.5.3.8.3c.5 0 .9-.3 1.1-.7s.1-.9-.2-1.3c-.3-.3-.8-.4-1.3-.3s-.7.7-.7 1.2zm.9.7h-.3v-1.4h.6c.2 0 .3 0 .5.1.1.1.2.2.1.4 0 .1-.2.2-.3.3.2 0 .2.2.3.4 0 .1.1.2.1.4h-.3c0-.1-.1-.2-.1-.4s-.1-.2-.3-.2h-.2zm0-.8h.2c.2 0 .3-.1.3-.2s-.1-.2-.3-.2h-.2z"/></g></g>
                 </svg>
                 <a href="https://fetchrewards.onelink.me/vvv3/referralsocial?code=V9Q9H" className="fetch-text sponsors-text">Referral Link Code: V9Q9H</a>
-                <div id="hamburger2" className="hamburger" onClick="fBlock(); myRotate(this);">
+                <div id="fetch" className={`hamburger ${fetchArticle ? 'change' : ''}`} onClick={() => {toggleFetch(); rotateHamburger('fetch');}}>
                     <hr className="hr1" id="fetch-selector"/>
                     <hr className="hr2"/>
                     <hr className="hr3"/>
                 </div> 
             </span>
-            <article className="sponsors-article" id="fetch-article">
+            <article className={`sponsors-article ${fetchArticle ? 'visible' : ''}`} id="fetch-article">
                 <p className="sponsors-paragraph">Scan Receipts to win FREE gift cards</p>
                 <hr className="finance-hr"/>
                 <ul>

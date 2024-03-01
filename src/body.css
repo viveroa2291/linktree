@@ -29,6 +29,10 @@
 .link:hover {
     cursor: pointer;
 }
+.hamburger {
+    margin-right: 1rem;
+    align-self: center;
+}
 .hamburger .hr1, .hr2, .hr3 {
     width: 25px;
     margin: 5px 0;
@@ -45,4 +49,7 @@
 } 
 .change .hr3 {
     transform: rotate(45deg) translate(-5px, -8px); 
+}
+.visbile {
+    display: block;
 }
