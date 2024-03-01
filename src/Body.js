@@ -16,7 +16,6 @@ function Body() {
     const handleSectionClick = (section) => {
         setActiveSection((prevSection) => (prevSection === section ? null : section));
     };
-          
     return (
         <div>
             <p className='description'>Full Stack Developer | Snapchat Lens Creator</p>
