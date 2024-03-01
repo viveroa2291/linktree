@@ -10,6 +10,10 @@ import Media from './components/Media';
 import Projects from './components/Projects';
 import Lenses from './components/Lenses';
 import Content from './components/Content';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(faEnvelope);
 function Body() {
     const [activeSection, setActiveSection] = useState(null);
 
