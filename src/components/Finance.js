@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../CSS/finance.css';
-import { SocialIcon } from 'react-social-icons';
 function Finance () {
     const [robinhoodArticle, setRobinhood] = useState(false);
     const [webullArticle, setWebull] = useState(false);
@@ -17,8 +16,8 @@ function Finance () {
     return (
         <div>
             <span className='finance-body'>
-                <svg class="robinhood" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g transform="scale(3.35329 6.34921)">
-                        <path d="m0 0h167v63h-167z" fill="none"/><g fill="#00c805" transform="matrix(.763866 0 0 .403431 29.2654 24.4399)"><g fill-rule="nonzero"><path d="m129.339 25.335-.182.061c-1.177.391-2.918.993-4.481 1.712-.084.039-.139.149-.139.149-.029.067-.065.149-.106.243l-.006.012c-.175.399-.417.998-.52 1.242l-.081.192c-.012.031-.005.066.02.089.014.014.032.022.053.022.011 0 .024-.002.035-.008l.189-.09c.428-.203.969-.512 1.537-.781l.02-.01c1.079-.512 2.298-1.09 3.031-1.439 0-.001.118-.064.178-.182l.549-1.101c.015-.029.01-.064-.01-.088-.022-.024-.056-.033-.087-.023z"/>
+                <svg className="robinhood" clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g transform="scale(3.35329 6.34921)">
+                        <path d="m0 0h167v63h-167z" fill="none"/><g fill="#00c805" transform="matrix(.763866 0 0 .403431 29.2654 24.4399)"><g fillRule="nonzero"><path d="m129.339 25.335-.182.061c-1.177.391-2.918.993-4.481 1.712-.084.039-.139.149-.139.149-.029.067-.065.149-.106.243l-.006.012c-.175.399-.417.998-.52 1.242l-.081.192c-.012.031-.005.066.02.089.014.014.032.022.053.022.011 0 .024-.002.035-.008l.189-.09c.428-.203.969-.512 1.537-.781l.02-.01c1.079-.512 2.298-1.09 3.031-1.439 0-.001.118-.064.178-.182l.549-1.101c.015-.029.01-.064-.01-.088-.022-.024-.056-.033-.087-.023z"/>
                         <path d="m124.951 23.627c.076-.15.433-.836.514-.989l.014-.026c2.384-4.498 5.29-8.739 8.634-12.607l.093-.107c.028-.034.033-.081.013-.12-.022-.039-.066-.061-.109-.055l-.14.019c-2.195.302-4.416.721-6.604 1.244-.217.061-.357.202-.388.235-1.637 1.961-3.188 4.026-4.611 6.141-.071.107-.079.363-.079.363s.359 2.754.881 4.784c-1.294 3.72-2.448 8.622-2.448 8.622-.01.032-.003.066.016.093.019.026.05.042.084.043h.736c.046.001.087-.027.104-.07l.05-.138c.751-2.049 1.609-4.074 2.555-6.046.221-.459.685-1.386.685-1.386z"/>
                         <path d="m135.193 10.809-.001-.141c-.002-.044-.029-.083-.07-.098-.041-.016-.088-.004-.117.03l-.091.106c-3.9 4.51-7.178 9.517-9.743 14.879l-.059.125c-.02.04-.012.088.018.12.02.021.047.032.076.033.013 0 .029-.003.042-.008l.128-.054c2.191-.907 4.428-1.693 6.65-2.336.133-.038.246-.131.309-.254.974-1.899 3.236-5.575 3.236-5.575.058-.083.043-.205.043-.205s-.396-4.397-.421-6.622z"/>
                         <path d="m140.236 4.467c-.554-.48-1.357-.705-2.605-.732-1.132-.025-2.478.219-4.002.722-.229.08-.41.207-.573.367-1.551 1.455-3.058 2.999-4.484 4.595l-.109.121c-.031.034-.035.084-.013.124.023.04.07.061.115.051l.16-.034c2.297-.491 4.617-.867 6.892-1.116.15-.016.305.034.416.136.112.103.176.249.173.402-.037 2.258.044 4.527.246 6.746l.013.145c.004.044.035.081.079.093.008.002.015.003.026.004.033 0 .068-.016.089-.046l.083-.119c1.282-1.829 2.678-3.607 4.145-5.289h-.001c.164-.187.208-.306.239-.476.462-2.956-.251-5.141-.889-5.694z"/>
@@ -30,19 +29,19 @@ function Finance () {
                         <path d="m110.159 6.418v6.286h-.05c-.877-1.026-2.254-1.653-3.582-1.653-3.356 0-5.735 2.931-5.735 7.014 0 4.258 2.254 7.013 5.76 7.013 1.353 0 2.906-.676 3.757-1.653h.051v1.277h2.229v-18.284zm0 13.55c0 1.653-1.402 2.906-3.231 2.906-2.379 0-3.707-1.729-3.707-4.809 0-3.056 1.328-4.784 3.707-4.784 1.829 0 3.231 1.352 3.231 3.13z"/>
                         <path d="m79.677 11.051c-3.607 0-6.087 2.881-6.087 7.014 0 4.233 2.405 7.013 6.087 7.013 3.632 0 6.011-2.78 6.011-7.013 0-4.133-2.455-7.014-6.011-7.014zm0 11.823c-2.28 0-3.682-1.854-3.682-4.809 0-2.956 1.402-4.784 3.682-4.784 2.204 0 3.607 1.878 3.607 4.784 0 2.93-1.403 4.809-3.607 4.809z"/></g>
                         <path d="m42.306 6.418h2.63v2.58h-2.63z"/>
-                        <path d="m67.103 11.051c-1.478 0-2.981.702-3.682 1.704h-.05v-6.337h-2.43v18.284h2.43v-8.341c0-1.803 1.302-3.055 3.156-3.055 1.828 0 2.88 1.202 2.88 3.281v8.115h2.43v-8.716c0-3.031-1.828-4.935-4.734-4.935z" fill-rule="nonzero"/>
+                        <path d="m67.103 11.051c-1.478 0-2.981.702-3.682 1.704h-.05v-6.337h-2.43v18.284h2.43v-8.341c0-1.803 1.302-3.055 3.156-3.055 1.828 0 2.88 1.202 2.88 3.281v8.115h2.43v-8.716c0-3.031-1.828-4.935-4.734-4.935z" fillRule="nonzero"/>
                         <path d="m42.406 11.427h2.43v13.275h-2.43z"/></g></g>
                 </svg>
-                <a class="finance-text robinhood-text" href="https://join.robinhood.com/adanv103">Claim FREE Stock</a>
+                <a className="finance-text robinhood-text" href="https://join.robinhood.com/adanv103">Claim FREE Stock</a>
                 <div id="hamburger" className={`hamburger ${robinhoodArticle ? 'change' : ''}`} onClick={() => { rotateHamburger(); toggleRobinhood();}}>
-                        <hr class="hr1" id="robinhood-selector"/>
-                        <hr class="hr2"/>
-                        <hr class="hr3"/>
+                        <hr className="hr1" id="robinhood-selector"/>
+                        <hr className="hr2"/>
+                        <hr className="hr3"/>
                 </div>
             </span>
             <article className={`finance-article ${robinhoodArticle ? 'visible' : ''}`} id="robinhood-article">
-                    <p class="finance-paragraph">Sign up using my link to get a FREE stock on robinhood.</p>
-                    <hr class="finance-hr"/>
+                    <p className="finance-paragraph">Sign up using my link to get a FREE stock on robinhood.</p>
+                    <hr className="finance-hr"/>
                     <ul>
                         <li>No Money Down.</li>
                         <li>You get $5-$200 worth of fractional shares from America's leading companies.</li>
@@ -54,8 +53,8 @@ function Finance () {
                 </article>    
             <span className='finance-body'>
             <xml version="1.0" encoding="UTF-8"/>
-                <svg class="webull" width="50px" height="50px" viewBox="0 0 92 16" version="1.1">                            
-                <g id="帮助" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <svg className="webull" width="50px" height="50px" viewBox="0 0 92 16" version="1.1">                            
+                <g id="帮助" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="详情问题列表页3" transform="translate(-360.000000, -32.000000)">
                         <g id="编组-16">
                             <g id="编组-12" transform="translate(360.000000, 32.000000)">
@@ -79,53 +78,53 @@ function Finance () {
                     </g>
                     </g>
                 </svg>
-                <a href="https://www.webull.com/activity?inviteCode=KCUq5teUm9Wv&source=NovRefer3" class="finance-text webull-text">Get up to 12 Free Stocks</a>
+                <a href="https://www.webull.com/activity?inviteCode=KCUq5teUm9Wv&source=NovRefer3" className="finance-text webull-text">Get up to 12 Free Stocks</a>
                 <div id="hamburger2" className={`hamburger ${webullArticle ? 'change' : ''}`} onClick={() => { rotateHamburger(); toggleWebull();}}>
-                    <hr class="hr1" id="webull-selector"/>
-                    <hr class="hr2"/>
-                    <hr class="hr3"/>
+                    <hr className="hr1" id="webull-selector"/>
+                    <hr className="hr2"/>
+                    <hr className="hr3"/>
                 </div> 
             </span>
             <article className={`finance-article ${webullArticle ? 'visible' : ""}`} id="webull-article">
-                <p class="finance-paragraph">When You Open and Fund a New Account</p>
-                <hr class="finance-hr"/>
+                <p className="finance-paragraph">When You Open and Fund a New Account</p>
+                <hr className="finance-hr"/>
                     <ul>
                         <li>Open an account with Webull to get your 2 free fractional shares each valued up to $300!</li>
                         <li>Deposit any amount to receive 4 - 10 free fractional shares each valued up to $3000.</li>
                     </ul>
             </article>       
             <span className='finance-body'>
-            <svg class="coinbase" role="img" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+            <svg className="coinbase" role="img" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.844 11.053c-.872 0-1.553.662-1.553 1.548s.664 1.542 1.553 1.542c.889 0 1.564-.667 1.564-1.547 0-.875-.664-1.543-1.564-1.543zm.006 2.452c-.497 0-.86-.386-.86-.904 0-.523.357-.909.854-.909.502 0 .866.392.866.91 0 .517-.364.903-.86.903zm1.749-1.778h.433v2.36h.693V11.11H6.599zm-5.052-.035c.364 0 .653.224.762.558h.734c-.133-.713-.722-1.197-1.49-1.197-.872 0-1.553.662-1.553 1.548 0 .887.664 1.543 1.553 1.543.75 0 1.351-.484 1.484-1.203h-.728a.78.78 0 01-.756.564c-.502 0-.855-.386-.855-.904 0-.523.347-.909.85-.909zm18.215.622l-.508-.075c-.242-.035-.415-.115-.415-.305 0-.207.225-.31.53-.31.336 0 .55.143.595.379h.67c-.075-.599-.537-.95-1.247-.95-.733 0-1.218.375-1.218.904 0 .506.317.8.958.892l.508.075c.249.034.387.132.387.316 0 .236-.242.334-.577.334-.41 0-.641-.167-.676-.42h-.681c.064.581.52.99 1.35.99.757 0 1.26-.346 1.26-.938 0-.53-.364-.806-.936-.892zM7.378 9.885a.429.429 0 00-.444.437c0 .254.19.438.444.438a.429.429 0 00.445-.438.429.429 0 00-.445-.437zm10.167 2.245c0-.645-.392-1.076-1.224-1.076-.785 0-1.224.397-1.31 1.007h.687c.035-.236.22-.432.612-.432.352 0 .525.155.525.345 0 .248-.317.311-.71.351-.531.058-1.19.242-1.19.933 0 .535.4.88 1.034.88.497 0 .809-.207.965-.535.023.293.242.483.548.483h.404v-.616h-.34v-1.34zm-.68.748c0 .397-.347.69-.769.69-.26 0-.48-.11-.48-.34 0-.293.353-.373.676-.408.312-.028.485-.097.572-.23zm-3.679-1.825c-.386 0-.71.162-.94.432V9.856h-.693v4.23h.68v-.391c.232.282.56.449.953.449.832 0 1.461-.656 1.461-1.543 0-.886-.64-1.548-1.46-1.548zm-.103 2.452c-.497 0-.86-.386-.86-.904 0-.517.369-.909.865-.909.503 0 .855.386.855.91 0 .517-.364.903-.86.903zm-3.187-2.452c-.45 0-.745.184-.919.443v-.385H8.29v2.975h.693v-1.617c0-.455.289-.777.716-.777.398 0 .647.282.647.69v1.704h.692v-1.755c0-.748-.386-1.278-1.142-1.278zM24 12.503c0-.851-.624-1.45-1.46-1.45-.89 0-1.542.668-1.542 1.548 0 .927.698 1.543 1.553 1.543.722 0 1.287-.426 1.432-1.03h-.722c-.104.264-.358.414-.699.414-.445 0-.78-.276-.854-.76H24v-.264zm-2.252-.23c.11-.414.422-.615.78-.615.392 0 .693.224.762.615Z"/>
                     </svg>
-                    <a href="https://coinbase.com/join/vivero_mwd" class="finance-text coinbase-text"> Claim FREE $10</a>
-                    <div id="hamburger3" class="hamburger" >
-                        <hr class="hr1" id="coinbase-selector"/>
-                        <hr class="hr2"/>
-                        <hr class="hr3"/>
+                    <a href="https://coinbase.com/join/vivero_mwd" className="finance-text coinbase-text"> Claim FREE $10</a>
+                    <div id="hamburger3" className="hamburger" >
+                        <hr className="hr1" id="coinbase-selector"/>
+                        <hr className="hr2"/>
+                        <hr className="hr3"/>
                     </div>
             </span>
-            <article class="finance-article" id="coinbase-article">
-                <p class="finance-paragraph">Sign up using my coinbase link to get FREE $10.</p>
-                <hr class="finance-hr"/>
+            <article className="finance-article" id="coinbase-article">
+                <p className="finance-paragraph">Sign up using my coinbase link to get FREE $10.</p>
+                <hr className="finance-hr"/>
                 <ul>
                     <li>Sign up for a Coinbase account using my unique referral link and make an eligible crypto trade and we’ll both receive the bonus.</li>
                 </ul>
             </article>    
             <span className='finance-body'>
-                <svg class="pi" viewBox="176.20000000000005 47.4 530.8 530.7" xmlns="http://www.w3.org/2000/svg" width="30" height="50"><circle cx="441.6" cy="312.8" fill="none" r="227.4"/><g fill="#f6b133">
+                <svg className="pi" viewBox="176.20000000000005 47.4 530.8 530.7" xmlns="http://www.w3.org/2000/svg" width="30" height="50"><circle cx="441.6" cy="312.8" fill="none" r="227.4"/><g fill="#f6b133">
                     <path d="M441.6 47.4c-146.6 0-265.4 118.8-265.4 265.4S295 578.1 441.6 578.1 707 459.3 707 312.7 588.1 47.4 441.6 47.4zm0 492.8c-125.6 0-227.4-101.8-227.4-227.4S316 85.4 441.6 85.4 669 187.2 669 312.8 567.2 540.2 441.6 540.2z"/><path d="M412 214h-34.5c-2.8 0-5-2.3-5-5v-25.2c0-2.8 2.3-5 5-5H412c2.8 0 5 2.3 5 5V209c.1 2.7-2.2 5-5 5zM493.5 214H459c-2.8 0-5-2.3-5-5v-25.2c0-2.8 2.3-5 5-5h34.5c2.8 0 5 2.3 5 5V209c0 2.7-2.2 5-5 5zM340.5 313.7h-45.4v-32.3s1.8-44.6 43.7-45.2h191.4v-26.3h45.6v25.4s-1.2 45.9-43.4 46.5l-33.8.9.5 156.2s.5 2.6-2.6 4.3l-35.2 12.5s-7.8 3.2-8.1-4.7V282H418v155.3s1 4.6-4.1 6.8l-32.3 11.4s-10.1 3.8-10-6.3V281.7h-30.9z"/></g>
                 </svg>
-                <a href="https://minepi.com/avivero" class="finance-text pi-text">Mine Pi on your phone</a>
-                <div id="hamburger3" class="hamburger" onclick="pi(); myRotate(this);">
-                    <hr class="hr1" id="pi-selector"/>
-                    <hr class="hr2"/>
-                    <hr class="hr3"/>
+                <a href="https://minepi.com/avivero" className="finance-text pi-text">Mine Pi on your phone</a>
+                <div id="hamburger3" className="hamburger" onClick="pi(); myRotate(this);">
+                    <hr className="hr1" id="pi-selector"/>
+                    <hr className="hr2"/>
+                    <hr className="hr3"/>
                 </div>
             </span>
-            <article class="finance-article" id="pi-article">
-                <p class="finance-paragraph">Download Pi Network using my referral link and mine a larger percentage of Pi everyday.</p>
-                <hr class="finance-hr"/>
+            <article className="finance-article" id="pi-article">
+                <p className="finance-paragraph">Download Pi Network using my referral link and mine a larger percentage of Pi everyday.</p>
+                <hr className="finance-hr"/>
                     <ul>
                         <li>Pi is a cryptocurrency that is still in its mining phase.</li>
                         <li>Pi makes crypto mining easy</li>
@@ -136,21 +135,21 @@ function Finance () {
                     </ul>
             </article>   
             <span className='finance-body'>
-                <svg xmlns="http://www.w3.org/2000/svg" class="app-icon cashapp" viewBox="0 0 64 75"><g fill-rule="nonzero" fill="#FFF">
+                <svg xmlns="http://www.w3.org/2000/svg" className="app-icon cashapp" viewBox="0 0 64 75"><g fillRule="nonzero" fill="#FFF">
                     <path d="M41.7 0c6.4 0 9.6 0 13.1 1.1a13.6 13.6 0 0 1 8.1 8.1C64 12.7 64 15.9 64 22.31v19.37c0 6.42 0 9.64-1.1 13.1a13.6 13.6 0 0 1-8.1 8.1C51.3 64 48.1 64 41.7 64H22.3c-6.42 0-9.64 0-13.1-1.1a13.6 13.6 0 0 1-8.1-8.1C0 51.3 0 48.1 0 41.69V22.3c0-6.42 0-9.64 1.1-13.1a13.6 13.6 0 0 1 8.1-8.1C12.7 0 15.9 0 22.3 0h19.4z" fill="#00D632"/><path d="M42.47 23.8c.5.5 1.33.5 1.8-.0l2.5-2.6c.53-.5.5-1.4-.06-1.94a19.73 19.73 0 0 0-6.72-3.84l.79-3.8c.17-.83-.45-1.61-1.28-1.61h-4.84a1.32 1.32 0 0 0-1.28 1.06l-.7 3.38c-6.44.33-11.9 3.6-11.9 10.3 0 5.8 4.51 8.29 9.28 10 4.51 1.72 6.9 2.36 6.9 4.78 0 2.49-2.38 3.95-5.9 3.95-3.2 0-6.56-1.07-9.16-3.68a1.3 1.3 0 0 0-1.84-.0l-2.7 2.7a1.36 1.36 0 0 0 .0 1.92c2.1 2.07 4.76 3.57 7.792 4.4l-.74 3.57c-.17.83.44 1.6 1.27 1.61l4.85.04a1.32 1.32 0 0 0 1.3-1.06l.7-3.39C40.28 49.07 45 44.8 45 38.57c0-5.74-4.7-8.16-10.4-10.13-3.26-1.21-6.08-2.04-6.08-4.53 0-2.42 2.63-3.38 5.27-3.38 3.36 0 6.59 1.39 8.7 3.29z" fill="#FFF"/></g>
                 </svg>
-                <a href="https://cash.app/app/HWRTRHT" class="finance-text cashapp-text">$adanvivero (Get $5)</a>
-                <div id="hamburger3" class="hamburger" onclick="cashapp(); myRotate(this);">
-                    <hr class="hr1" id="cashapp-selector"/>
-                    <hr class="hr2"/>
-                    <hr class="hr3"/>
+                <a href="https://cash.app/app/HWRTRHT" className="finance-text cashapp-text">$adanvivero (Get $5)</a>
+                <div id="hamburger3" className="hamburger" onClick="cashapp(); myRotate(this);">
+                    <hr className="hr1" id="cashapp-selector"/>
+                    <hr className="hr2"/>
+                    <hr className="hr3"/>
                 </div>
             </span>
             <span className='finance-body'>
-                <svg class="venmo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg className="venmo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.6C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.8,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM278,387H174.32L132.75,138.44l90.75-8.62,22,176.87c20.53-33.45,45.88-86,45.88-121.87,0-19.62-3.36-33-8.61-44L365.4,124.1c9.56,15.78,13.86,32,13.86,52.57C379.25,242.17,323.34,327.26,278,387Z" fill="blue"></path>
                 </svg>
-                <a href="https://account.venmo.com/u/Adan-Vivero" class="finance-text venmo-text">@Adan-Vivero</a>
+                <a href="https://account.venmo.com/u/Adan-Vivero" className="finance-text venmo-text">@Adan-Vivero</a>
             </span>
          </div>
     )

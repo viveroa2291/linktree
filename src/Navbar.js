@@ -26,8 +26,8 @@ function NavBar() {
             <button className='movie-button' type='button' onClick={toggleMedia}>
                 {isMedia ? 'Hide Media' : 'Show Media'}
             </button>
-            <a class="home-button" href="https://viveroa2291.github.io/adansLinkTree/">Home</a>
-            <audio ref={audioRef} className="music" src={music} controls autoplay loop /> 
+            <a className="home-button" href="https://viveroa2291.github.io/adansLinkTree/">Home</a>
+            <audio ref={audioRef} className="music" src={music} controls autoPlay loop /> 
         </div>
     )
 };

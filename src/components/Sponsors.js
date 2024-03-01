@@ -3,29 +3,29 @@ import '../CSS/sponsors.css';
 function Sponsors() {
     return (
         <div>
-                <span class="sponsors-body" id="wj">
-                    <a href="https://www.wjdogtreats.com/" class="sponsors-text WJ-text">Free Shipping Code: ADAN</a>
-                    <div id="hamburger2" class="hamburger" onclick="WJ(); myRotate(this);">
-                        <hr class="hr1" id="wj-selector"/>
-                        <hr class="hr2"/>
-                        <hr class="hr3"/>
+                <span className="sponsors-body" id="wj">
+                    <a href="https://www.wjdogtreats.com/" className="sponsors-text WJ-text">Free Shipping Code: ADAN</a>
+                    <div id="hamburger2" className="hamburger" onClick="WJ(); myRotate(this);">
+                        <hr className="hr1" id="wj-selector"/>
+                        <hr className="hr2"/>
+                        <hr className="hr3"/>
                     </div> 
                 </span>
-                <article class="sponsors-article" id="WJ-article">
-                    <p class="sponsors-paragraph">Healthy Dog Treats</p>
-                    <hr class="sponsors-hr"/>
+                <article className="sponsors-article" id="WJ-article">
+                    <p className="sponsors-paragraph">Healthy Dog Treats</p>
+                    <hr className="sponsors-hr"/>
                     <ul>
                         <li>In 2021 we started WJ Dog Treats to disrupt the unhealthy trend occurring in the dog treat industry.</li>
                         <li><a href="https://www.wjdogtreats.com/ingredients">Click here</a> for the ingredients.</li>
                         <li>Use my Promo Code: ADAN <br/>for FREE shipping.</li>
                     </ul>
                 </article>       
-                <span class="sponsors-body">
+                <span className="sponsors-body">
                     <img/>
-                <a href="https://www.razomforukraine.org/donate/" class="ukraine-text">Donate to Ukraine</a>
+                <a href="https://www.razomforukraine.org/donate/" className="ukraine-text">Donate to Ukraine</a>
                 </span>
-                <span class="sponsors-body">
-                    <svg class="fetch" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" transform="matrix(3.36449 0 0 3.36449 46.1682 69.1215)">
+                <span className="sponsors-body">
+                    <svg className="fetch" clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg"><g fillRule="nonzero" transform="matrix(3.36449 0 0 3.36449 46.1682 69.1215)">
                         <path d="m22.7 23h19.3c3.7 0 6.7 3 6.7 6.7v18.3c0 3.7-3 6.7-6.7 6.7h-19.3c-3.7 0-6.7-3-6.7-6.7v-18.3c0-3.7 3-6.7 6.7-6.7z" fill="#2f0c38"/><g transform="translate(1.98148 4.9537)">
                         <path d="m42 34.6c-.1-.9-.5-2-2.9-1.3-1.2.4-2.4.4-2.9-.1-.1-.1-.1-.2-.2-.2-.2-.4-.1-1 .4-1.8.2-.5.7-.7 1.2-.7.4 0 .8.1 1.4.1 1.7 0 2.3-1.1 2.2-2.1 0-.3-.4-.2-1.1-.4s-1.3-.1-1.5-1.1c-.2-.6-.7-1-1.3-1.1s-1.8-.7-2.8.1l-.8-.4c-.5-.1-.5.2-1 .4s-1.4-.3-1.1.3c.4.7 1.2 1.1 2 .8-.6 2.9-3.3 3.6-5.7 3.5-1.5-.1-2.9-.7-3.9-1.8s-1.5-2.6-1.5-4.1c0-.9-.3-1.2-.5-.7-.1.2-.2.4-.2.6 0 .1-.1.2-.1.3-.3 2.2.6 4.3 2.2 5.6-.5.4-.8 1-1 1.7-.1.5-.1.9 0 1.4 0 .1 0 .1.1.2.2 1-1.6 1.6-2.4 1.8h-.9c-.5 0-.8 0-1.1 1.2-.4 1.7-1.7 1.3-1.9 1.8-.5.7.2 1.3 1.1 1.3.6 0 1.1-.2 1.6-.5 1.5-1.4.8-2 2.3-1.9l.7.1c1.7.2 2.9.6 4.5-1.2.1-.1.2-.3.3-.4s.2-.1.3-.2h.3c.6.2 2.1 1 3.7.7.6-.2 1.2-.6 1.7-1.1 0 0 .3-.2.4 0s.4.7.7.9c.6.6.6.4 1.8-.1l.4-.2c3.2-1.2 3.1-1.6 3.8-.3.1.2.5.3.9.1.4-.1.8-.6.8-1.2" fill="#f8a619"/><g fill="#403f41">
                         <path d="m21.1 25c-.8 1.7-3.8.6-3.8.3-.1-.4.2-.8 0-.6s-.8 1-1 1.2c.1-.1.2-.1.3-.2h.3c.6.2 2.1 1 3.7.7.6-.2 1.2-.6 1.7-1.1 0 0 .3-.2.4 0 0 0-.7-1.2-1-1.6-.2-.3-.2.5-.6 1.3" opacity=".1" transform="translate(10.8672 10.1905)"/>
@@ -44,16 +44,16 @@ function Sponsors() {
                         <path d="m59 41.2c0 .2 0 .5-.1.7-.1.4-.4.6-.7.6h-.6v2.8c0 .1.1.2.1.2 1.1.3 2.3.2 3.3-.3.8-.5 1.3-1.3 1.4-2.3v-9.4h2.7v-3.3h-2.7v-1.4c0-.5.2-1 .5-1.4.4-.3.8-.5 1.3-.4.4 0 .9 0 1.4.1v-3.1h-.1c-1-.2-2-.2-3 0-1.4.2-2.6 1.2-3.1 2.6-.3.8-.4 1.6-.4 2.4v1.1h-2.3v3.3h2.3z"/>
                         <path d="m123 31.4c0 .6-.3 1.2-.9 1.4s-1.2.1-1.6-.3-.6-1.1-.3-1.6.8-.9 1.4-.9c.4 0 .8.1 1 .4.2.2.4.6.4 1zm-2.6 0c0 .3.1.6.3.8s.5.3.8.3c.5 0 .9-.3 1.1-.7s.1-.9-.2-1.3c-.3-.3-.8-.4-1.3-.3s-.7.7-.7 1.2zm.9.7h-.3v-1.4h.6c.2 0 .3 0 .5.1.1.1.2.2.1.4 0 .1-.2.2-.3.3.2 0 .2.2.3.4 0 .1.1.2.1.4h-.3c0-.1-.1-.2-.1-.4s-.1-.2-.3-.2h-.2zm0-.8h.2c.2 0 .3-.1.3-.2s-.1-.2-.3-.2h-.2z"/></g></g>
                     </svg>
-                    <a href="https://fetchrewards.onelink.me/vvv3/referralsocial?code=V9Q9H" class="fetch-text sponsors-text">Referral Link Code: V9Q9H</a>
-                    <div id="hamburger2" class="hamburger" onclick="fBlock(); myRotate(this);">
-                        <hr class="hr1" id="fetch-selector"/>
-                        <hr class="hr2"/>
-                        <hr class="hr3"/>
+                    <a href="https://fetchrewards.onelink.me/vvv3/referralsocial?code=V9Q9H" className="fetch-text sponsors-text">Referral Link Code: V9Q9H</a>
+                    <div id="hamburger2" className="hamburger" onClick="fBlock(); myRotate(this);">
+                        <hr className="hr1" id="fetch-selector"/>
+                        <hr className="hr2"/>
+                        <hr className="hr3"/>
                     </div> 
                 </span>
-                <article class="sponsors-article" id="fetch-article">
-                    <p class="sponsors-paragraph">Scan Receipts to win FREE gift cards</p>
-                    <hr class="finance-hr"/>
+                <article className="sponsors-article" id="fetch-article">
+                    <p className="sponsors-paragraph">Scan Receipts to win FREE gift cards</p>
+                    <hr className="finance-hr"/>
                     <ul>
                         <li>Earn points on ANY receipt from ANY store or restaurant.</li>
                         <li>Redeem points for gift cards and other rewards from popular fast-food chains and other popular companies.</li>

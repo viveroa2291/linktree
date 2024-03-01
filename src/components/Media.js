@@ -6,21 +6,21 @@ import {SocialIcon } from 'react-social-icons';
 function Media () {
     return (
         <div>
-            <span class="video-media-body">
-                <img src={rumble} loading="lazy" alt="Rumble Logo" class="rumble-logo"/>
-                <a href="https://rumble.com/user/adxadan" class="rumble-text">Rumble</a>
+            <span className="video-media-body">
+                <img className="rumble-logo" src={rumble} loading="lazy" alt="Rumble Logo"/>
+                <a className="rumble-text" href="https://rumble.com/user/adxadan">Rumble</a>
             </span> 
-            <span class="video-media-body">
+            <span className="video-media-body">
                 <div>
                     <SocialIcon className="youtube-icon" url="https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg"/>
                 </div>
-                <a href="https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg" class="youtube-text">Youtube</a>
+                <a className="youtube-text" href="https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg">Youtube</a>
             </span>
-            <span class="video-media-body">
+            <span className="video-media-body">
                 <div>
                     <SocialIcon className="twitch-icon" url="https://www.twitch.tv/adxadan" />
                 </div>
-                <a href="https://www.twitch.tv/adxadan" class="twitch-text">Twitch</a>
+                <a className="twitch-text" href="https://www.twitch.tv/adxadan">Twitch</a>
             </span>
         </div>
     )

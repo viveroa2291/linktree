@@ -1,0 +1,7 @@
+.content-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.snapchat {
+    margin-top: 1rem;
+}

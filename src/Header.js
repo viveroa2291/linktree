@@ -29,7 +29,7 @@ function Header () {
     return (
         <div>
             <p className='date'>Happy {dayName}</p>
-            <div class="picture">
+            <div className="picture">
                 <img className='header-pic' src={chicago} alt="Header pic"/>
             </div>
             <h1 className='header-name'>Adan Vivero</h1>

@@ -41,7 +41,6 @@ function Body() {
                 {activeSection === 'projects' && <Projects/>}
                 {activeSection === 'lenses' && <Lenses/>}
                 {activeSection === 'content' && <Content/>}
-
         </div>
     )
 }

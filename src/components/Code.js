@@ -8,19 +8,19 @@ function Code () {
                 <div className="code-container">
                     <SocialIcon className="code-icons" url="https://stackoverflow.com/users/10572727/adan-vivero"/>
                 </div>
-                <a href="https://stackoverflow.com/users/10572727/adan-vivero" class="stackoverflow-text code-text">Stackoverflow</a>  
+                <a className="stackoverflow-text code-text" href="https://stackoverflow.com/users/10572727/adan-vivero">Stackoverflow</a>  
             </span>
             <span className="code-block">
                 <div className="code-container">
                     <SocialIcon className="code-icons" url="https://github.com/viveroa2291"/>
                 </div>
-                <a href="https://github.com/viveroa2291" class="code-text github-text">Github</a>
+                <a className="code-text github-text" href="https://github.com/viveroa2291" >Github</a>
             </span>
             <span className="code-block">
                 <div className="code-container">
                     <SocialIcon className="code-icons" url="https://gitlab.com/viveroa2291"/>
                 </div>
-                <a href="https://gitlab.com/viveroa2291" class="gitlab gitlab-text code-text">Gitlab</a>
+                <a className="gitlab gitlab-text code-text" href="https://gitlab.com/viveroa2291" >Gitlab</a>
             </span>
         </div>
     )
