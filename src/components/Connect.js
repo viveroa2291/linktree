@@ -5,11 +5,15 @@ function  Connect() {
     return (
         <div>
             <span className="connect-body">    
-                <SocialIcon className="linkedin linkedin-block" url="https://www.linkedin.com/in/adan-vivero-a93970156/"/>
+                <span className="linkedin-span">
+                    <SocialIcon className="linkedin linkedin-block" url="https://www.linkedin.com/in/adan-vivero-a93970156/"/>
+                </span>
                 <a className="connect-text linkedin-text" href="https://www.linkedin.com/in/adan-vivero-a93970156/" >Linkedin</a>
             </span>                
             <span className="connect-body">
-                <SocialIcon className='icon' url="https://medium.com/@adan_vivero"/>
+                <span className="medium-span">
+                    <SocialIcon className='medium-icon' url="https://medium.com/@adan_vivero"/>
+                </span>
                 <a className="connect-text medium-text" href="https://medium.com/@avivero6487">Medium</a>
             </span>
             <span className="connect-body">

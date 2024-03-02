@@ -12,6 +12,7 @@ import Lenses from './components/Lenses';
 import Content from './components/Content';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { SocialIcon } from 'react-social-icons';
 
 library.add(faEnvelope);
 function Body() {
@@ -19,6 +20,8 @@ function Body() {
 
     const handleSectionClick = (section) => {
         setActiveSection((prevSection) => (prevSection === section ? null : section));
+        const social = document.getElementById("social-media-headers");
+        social.style.display = "none";
     };
     return (
         <div>
@@ -36,6 +39,13 @@ function Body() {
                 <a className='link' href='#lenses' onClick={() => handleSectionClick('lenses')}>Lenses</a>
                 <a className='link' href='#content' onClick={() => handleSectionClick('content')}>Content</a>
             </div>
+            <div class="social-media-headers" id="social-media-headers">
+                <SocialIcon className='header-icons' url='https://stackoverflow.com/users/10572727/adan-vivero'/>
+                <SocialIcon className='header-icons' url='https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg'/>
+                <SocialIcon className='header-icons' url='https://github.com/viveroa2291'/>
+                <SocialIcon className='header-icons' url='https://www.linkedin.com/in/adan-vivero-a93970156/'/>
+            </div>
+            <div className='body-sections'>
                 {activeSection === 'finance' && <Finance/>}
                 {activeSection === 'code' && <Code/>}
                 {activeSection === 'sponsors' && <Sponsors/>}
@@ -45,6 +55,7 @@ function Body() {
                 {activeSection === 'projects' && <Projects/>}
                 {activeSection === 'lenses' && <Lenses/>}
                 {activeSection === 'content' && <Content/>}
+            </div>
         </div>
     )
 }

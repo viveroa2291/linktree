@@ -6,7 +6,9 @@ function Social () {
     return (
         <div>
             <span className="social-media-body">
-                <SocialIcon url="https://twitter.com/adan_vivero"/>
+                <span className="icon">
+                    <SocialIcon url="https://twitter.com/adan_vivero"/>
+                </span>
                 <a href="https://twitter.com/adan_vivero" className="twitter-text">Twitter</a>
             </span>
             {/* 
@@ -16,19 +18,27 @@ function Social () {
             </span>    
             */} 
             <span className="social-media-body">
-                <SocialIcon url="https://discord.com/channels/719094259051135027/719094260174946329"/>
+                <span className="icon">
+                    <SocialIcon url="https://discord.com/channels/719094259051135027/719094260174946329"/>
+                </span>
                 <a href="https://discord.com/channels/719094259051135027/719094260174946329" className="discord-text">adan.vivero#9038</a>
             </span>
             <span className="social-media-body">
-                <SocialIcon url="https://www.snapchat.com/add/adx305"/>
+                <span className="icon">
+                    <SocialIcon url="https://www.snapchat.com/add/adx305"/>
+                </span>
                 <a href="https://www.snapchat.com/add/adx305" className="snapchat snapchat-text">Snapchat</a>
             </span>
             <span className="social-media-body">
-                <SocialIcon url="https://www.facebook.com/adan.vivero97/"/>
+                <span className="icon">
+                    <SocialIcon url="https://www.facebook.com/adan.vivero97/"/>
+                </span>
                 <a href="https://www.facebook.com/adan.vivero97/" className="facebook-text">Facebook</a>
             </span>
             <span className="social-media-body">
-                <SocialIcon url="https://www.tiktok.com/@adxadan"/>
+                <span className="icon">
+                    <SocialIcon url="https://www.tiktok.com/@adxadan"/>
+                </span>
                 <a href="https://www.tiktok.com/@adxadan" className="tiktok-text">TikTok - adxadan</a>
             </span>
             <span className="social-media-body">

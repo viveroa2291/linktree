@@ -81,3 +81,7 @@
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
+.icon {
+    position: absolute;
+    margin-left: .5rem;
+}

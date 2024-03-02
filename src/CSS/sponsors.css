@@ -36,7 +36,11 @@
     width: 24%;
 }
 .sponsors-paragraph {
-    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 13px;
 }
 .sponsors-hr {
     width: 50%;
@@ -94,6 +98,7 @@
 .visible {
     display: block;
 }
+
 @media (max-width: 1050px) {
     .sponsors-body {
         width: 75%;

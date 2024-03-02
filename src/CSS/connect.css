@@ -20,7 +20,7 @@
 .connect-body:hover>.connect-text {
     color: black;
 }
-.medium, .mathematics, .meta {
+.mathematics, .meta {
     position: absolute;
     margin-left: 1rem;
     align-self: center;
@@ -34,4 +34,8 @@
     text-decoration: none;
     font-size: 16px;
     align-self: center;
+}
+ .linkedin-span, .medium-span {
+    position: absolute;
+    margin-left: .5rem;
 }
