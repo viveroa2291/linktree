@@ -96,3 +96,8 @@ li {
     width: 75%;
     font-size: 13px;
 }
+@media (max-width: 800px) {
+    .finance-article {
+        width: 90%;
+    }
+}

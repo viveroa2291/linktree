@@ -39,7 +39,7 @@ function Body() {
                 <a className='link' href='#lenses' onClick={() => handleSectionClick('lenses')}>Lenses</a>
                 <a className='link' href='#content' onClick={() => handleSectionClick('content')}>Content</a>
             </div>
-            <div class="social-media-headers" id="social-media-headers">
+            <div className="social-media-headers" id="social-media-headers">
                 <SocialIcon className='header-icons' url='https://stackoverflow.com/users/10572727/adan-vivero'/>
                 <SocialIcon className='header-icons' url='https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg'/>
                 <SocialIcon className='header-icons' url='https://github.com/viveroa2291'/>

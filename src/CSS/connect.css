@@ -39,3 +39,8 @@
     position: absolute;
     margin-left: .5rem;
 }
+@media (max-width: 800px) {
+    .connect-body { 
+        width: 90%;
+    }
+}

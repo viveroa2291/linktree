@@ -22,20 +22,14 @@
     transition: .75s;
 }
 .rumble-logo {
-    height: 35px;
-    margin-top: .5rem;
-}
-.rumble-logo {
-    height: 35px;
-    margin-left: 1rem;
-    margin-top: .5rem;
-}
-.twitch-logo {
-    height: 35px;
-}
-.youtube-icon, .twitch-icon, .rumble-logo {
     position: absolute;
+    height: 40px;
     margin-left: 1.5rem;
+    align-self: center;
+}
+.youtube-span, .twitch-span {
+    position: absolute;
+    margin-left: 1rem;
     align-self: center;
 }
 .rumble-text, .youtube-text, .twitch-text {
@@ -50,10 +44,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 @media (max-width: 800px) {
-    .twitch-icon {
-        margin-left: 1rem;
+    .video-media-body {
+        width: 90%;
     }
     .twitch-text, .youtube-text, .rumble-text {
-        font-size: 14px;
+        font-size: 16px;
     } 
 }

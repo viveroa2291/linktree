@@ -13,7 +13,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
 }
-.project-body:hover{
+.project-body:hover {
     background-color: white;
     cursor: pointer;
     transition: .75s;
@@ -21,53 +21,41 @@
 .project-body:hover>.cancun-text, .project-body:hover>.developer-text {
     color: #000000;
 }
-.cancun-image {
-    height: 25px;
-}
-.phone-image {
-    height: 35px;
-    margin-top: .5rem;
-}
-.tic-tac-toe-image {
-    height: 35px;
-    margin-top: .5rem;
-    margin-left: 1rem;
-}
-.cancun-logo, .phone-image { 
+.cancun-image, .phone-image, .tic-tac-toe-image, .valentines-image {
     position: absolute;
     align-self: center;
 }
+.cancun-image {
+    height: 30px;
+    margin-left: 1rem;
+}
 .phone-image {
+    height: 35px;
     margin-left: 1.5rem;
 }
-.cancun-text, .developer-text, .tic-tac-toe-text {
+.tic-tac-toe-image {
+    height: 35px;
+    margin-left: 1rem;
+} 
+.valentines-image {
+    height: 30px;
+    margin-left: 1rem;
+}
+.cancun-text, .developer-text, .tic-tac-toe-text, .valentines-text {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1px;
     align-self: center;
     color: black;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-}
-.cancun-text {
-    margin-left: -.5rem;
-}
-.tic-tac-toe-text {
-    margin-left: 3.5rem;
-}
-.valentines-image {
-    height: 30px;
-    margin-left: 1rem;
-    align-self: center;
+    text-align: center;
 }
 @media (max-width: 800px) {
     .project-body {
-        width: 69%;
-    }
-    .cancun-logo {
-        margin-left: 1rem;
+        width: 90%;
     }
     .cancun-text, .developer-text, .tic-tac-toe-text {
         font-size: 14px;

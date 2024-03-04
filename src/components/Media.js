@@ -11,15 +11,15 @@ function Media () {
                 <a className="rumble-text" href="https://rumble.com/user/adxadan">Rumble</a>
             </span> 
             <span className="video-media-body">
-                <div>
+                <span className="youtube-span">
                     <SocialIcon className="youtube-icon" url="https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg"/>
-                </div>
+                </span>
                 <a className="youtube-text" href="https://www.youtube.com/channel/UC44ZQ3MDGUBNPA0ZFsY8Lfg">Youtube</a>
             </span>
             <span className="video-media-body">
-                <div>
+                <span className="twitch-span">
                     <SocialIcon className="twitch-icon" url="https://www.twitch.tv/adxadan" />
-                </div>
+                </span>
                 <a className="twitch-text" href="https://www.twitch.tv/adxadan">Twitch</a>
             </span>
         </div>

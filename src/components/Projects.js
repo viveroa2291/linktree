@@ -24,7 +24,7 @@ function Projects () {
             </span>
             <span className="project-body">
                 <img className="valentines-image" src={valentines} alt="Valentines"/>
-                <a href="https://adans-valentines-card.vercel.app/" className="tic-tac-toe-text">Valentines Card</a>
+                <a href="https://adans-valentines-card.vercel.app/" className="valentines-text">Valentines Card</a>
             </span> 
         </div>
     )

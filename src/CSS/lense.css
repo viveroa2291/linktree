@@ -3,11 +3,15 @@
 }
 .snapchat-lenses {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .lense-header {
     margin-top: 1rem;
     text-align: center;
+    color: white;
 }
 .snap-code {
     display: flex;
@@ -16,11 +20,11 @@
 }
 .lense-link {
     display: block;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: .5rem;
-    color: black;
+    color: white;
 }
 .visible {
     display: block;
@@ -42,7 +46,8 @@
 @media (max-width: 800px) {
     .snapchat-lenses {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
     }
     .about-section {
         width: 75%;
@@ -51,8 +56,12 @@
         text-align: center;
     }
     .lense-link {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
     }
     .tech-stack {
         height: 25px;
