@@ -30,7 +30,7 @@ function NavBar() {
                 {isMedia ? 'Hide Media' : 'Show Media'}
             </button>
             */}
-            <a className="home-button" href="https://viveroa2291.github.io/adansLinkTree/">Home</a>
+            <a className="home-button" href="https://adans-linktree.vercel.app/">Home</a>
             <audio ref={audioRef} className="music" src={music} controls autoPlay loop /> 
         </div>
     )
