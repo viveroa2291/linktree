@@ -30,6 +30,7 @@ function Body() {
         })
         .catch(error => {
             console.error("Error fetching snap followers: ", error);
+            setSnapchatFollowers("Failed");
         });
     }, []);
 
