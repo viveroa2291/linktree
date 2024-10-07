@@ -21,7 +21,8 @@ function Body() {
     const [snapchatFollowers, setSnapchatFollowers] = useState('Loading...');
 
     useEffect(() => {
-        fetch('http://localhost:3001/api/snap-followers')
+        // fetch('http://localhost:3001/api/snap-followers')
+        fetch(`${process.env.REACT_APP_API_URL}/api/snap-followers`)
         .then(response => response.json())
         .then(data => {
             console.log('Fetched Data: ', data);
