@@ -55,7 +55,7 @@ function Body() {
                     { /* <td>1.1k</td> */ } 
                         <td>{snapchatFollowers}</td>
                         <td>346</td>   
-                        <td id="fb-follower"></td>
+                        <td id="fb-follower">1405</td>
                     </tr>
                 </table>
             </div> 
