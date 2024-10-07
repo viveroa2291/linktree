@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './body.css';
+import './CSS/follower.css'
 import Finance from './components/Finance';
 import Code from './components/Code';
 import Sponsors from './components/Sponsors';
@@ -17,6 +18,20 @@ import { SocialIcon } from 'react-social-icons';
 library.add(faEnvelope);
 function Body() {
     const [activeSection, setActiveSection] = useState(null);
+    const [snapchatFollowers, setSnapchatFollowers] = useState('Loading...');
+
+    useEffect(() => {
+        fetch('http://localhost:3001/api/snap-followers')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched Data: ', data);
+            setSnapchatFollowers(data.followers) 
+        })
+        .catch(error => {
+            console.error("Error fetching snap followers: ", error);
+            setSnapchatFollowers("Error loading data");
+        });
+    }, []);
 
     const handleSectionClick = (section) => {
         setActiveSection((prevSection) => (prevSection === section ? null : section));
@@ -28,6 +43,23 @@ function Body() {
             <p className='description'>Full Stack Developer | Snapchat Lens Creator</p>
             <p className='description'>E-mail for all business inquiries</p>
             <p className='description'><FontAwesomeIcon icon="envelope"/> adan.vivero1@gmail.com</p>
+            <div class="follower-count" id="follower-count">
+                <p class="follower-header">Follower Count</p>
+                <table class="follower-table" border="1">
+                    <tr>
+                    { /* <th>Instagram</th> */ }
+                        <th>Snapchat</th> 
+                        <th>Twitter</th>  
+                        <th>Facebook</th>
+                    </tr>
+                    <tr>
+                    { /* <td>1.1k</td> */ } 
+                        <td>{snapchatFollowers}</td>
+                        <td>346</td>   
+                        <td id="fb-follower"></td>
+                    </tr>
+                </table>
+            </div> 
             <div className='links'>
                 <p className='link' onClick={() => handleSectionClick('finance')}>Finance</p>
                 <a className='link' href='#code' onClick={() => handleSectionClick('code')}>Code</a>

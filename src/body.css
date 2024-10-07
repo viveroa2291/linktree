@@ -65,6 +65,12 @@
     height: 1000px;
     color: black;
 }
+.follower-header {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 @media (max-width: 800px) {
     .links {
         width: 100%;
