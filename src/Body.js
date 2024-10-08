@@ -19,13 +19,15 @@ library.add(faEnvelope);
 function Body() {
     const [activeSection, setActiveSection] = useState(null);
     const [snapchatFollowers, setSnapchatFollowers] = useState('Loading...');
+    const [twitterFollowers, setTwitterFollowers] = useState('Loading...');
+    const [instagramFollowers, setInstagramFollowers] = useState('Loading...');
 
     useEffect(() => {
-        // fetch('http://localhost:3001/api/snap-followers')
-        fetch(`${process.env.REACT_APP_API_URL}/api/snap-followers`)
+        fetch('http://localhost:3001/api/snap-followers')
+        //fetch(`${process.env.REACT_APP_API_URL}/api/snap-followers`)
         .then(response => response.json())
         .then(data => {
-            console.log('Fetched Data: ', data);
+            console.log('Fetched Snapchat Data: ', data);
             setSnapchatFollowers(data.followers) 
         })
         .catch(error => {
@@ -34,6 +36,31 @@ function Body() {
         });
     }, []);
 
+    useEffect(() => {
+        fetch('http://localhost:3001/api/twitter-followers')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched Twitter Data: ', data);
+            setTwitterFollowers(data.followers)
+        })
+        .catch(error => {
+            console.error("Error fetching twitter followers: ", error);
+            setTwitterFollowers("Failed");
+        });
+    }, []);
+    useEffect(() => {
+        fetch('http://localhost:3001/api/insta-followers')
+        //fetch(`${process.env.REACT_APP_API_URL}/api/snap-followers`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched Instagram Data: ', data);
+            setInstagramFollowers(data.followers) 
+        })
+        .catch(error => {
+            console.error("Error fetching Instagram followers: ", error);
+            setInstagramFollowers("Failed");
+        });
+    }, []);
     const handleSectionClick = (section) => {
         setActiveSection((prevSection) => (prevSection === section ? null : section));
         const social = document.getElementById("social-media-headers");
@@ -48,16 +75,16 @@ function Body() {
                 <p class="follower-header">Follower Count</p>
                 <table class="follower-table" border="1">
                     <tr>
-                    { /* <th>Instagram</th> */ }
+                        <th>Instagram</th> 
                         <th>Snapchat</th> 
                         <th>Twitter</th>  
-                        <th>Facebook</th>
+                       {/* <th>Facebook</th> */} 
                     </tr>
                     <tr>
-                    { /* <td>1.1k</td> */ } 
+                        <td>{instagramFollowers}</td> 
                         <td>{snapchatFollowers}</td>
-                        <td>346</td>   
-                        <td id="fb-follower">1405</td>
+                        <td>{twitterFollowers}</td>   
+                        {/* <td id="fb-follower">1405</td> */} 
                     </tr>
                 </table>
             </div> 
