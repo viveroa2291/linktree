@@ -71,23 +71,23 @@ function Body() {
             <p className='description'>Full Stack Developer | Snapchat Lens Creator</p>
             <p className='description'>E-mail for all business inquiries</p>
             <p className='description'><FontAwesomeIcon icon="envelope"/> adan.vivero1@gmail.com</p>
-            <div class="follower-count" id="follower-count">
+            {/* <div class="follower-count" id="follower-count">
                 <p class="follower-header">Follower Count</p>
                 <table class="follower-table" border="1">
                     <tr>
                         <th>Instagram</th> 
                         <th>Snapchat</th> 
                         <th>Twitter</th>  
-                       {/* <th>Facebook</th> */} 
+                       {/* <th>Facebook</th> 
                     </tr>
                     <tr>
                         <td>{instagramFollowers}</td> 
                         <td>{snapchatFollowers}</td>
                         <td>{twitterFollowers}</td>   
-                        {/* <td id="fb-follower">1405</td> */} 
+                        {/* <td id="fb-follower">1405</td>
                     </tr>
                 </table>
-            </div> 
+            </div>  */}
             <div className='links'>
                 <p className='link' onClick={() => handleSectionClick('finance')}>Finance</p>
                 <a className='link' href='#code' onClick={() => handleSectionClick('code')}>Code</a>
