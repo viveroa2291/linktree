@@ -1,9 +1,14 @@
 .content-header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
 }
 .snapchat {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 800px) {
     .content-header {
