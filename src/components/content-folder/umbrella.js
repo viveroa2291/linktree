@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Logan = () => {
+const Umbrella = () => {
   useEffect(() => {
     // Create and append the script
     const script = document.createElement('script');
@@ -20,12 +20,12 @@ const Logan = () => {
     <div>
       <blockquote
         className="snapchat-embed"
-        data-snapchat-embed-url="https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYd2N1dHVzend4AYiRHsvDAYiRHrWvAAAAAQ/embed"
-        data-snapchat-embed-title="@hitwave's Sound"
+        data-snapchat-embed-url="https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYd2poY2VoaGd1AYkisUj9AYkisUEKAAAAAQ/embed"
+        data-snapchat-embed-title="@adx305's Sound"
         data-snapchat-embed-style="border-radius: 20px; width: 21vw; height: 650px;" // This is the line of code that fixed my error
       ></blockquote>
     </div>
   );
 };
 
-export default Logan;
+export default Umbrella;
