@@ -24,10 +24,6 @@
   height: 50px;
   animation: spin 1s linear infinite;
 }
-.loading-text {
-
-    color: red;
-}
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -41,6 +37,7 @@
 @media (max-width: 800px) {
     .content-header {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
     .snapchat {
         display: block;

@@ -27,7 +27,7 @@ function Content () {
         script.onload = () => setIsLoading(false);
         const timeout = setTimeout(() => {
             setIsLoading(false);
-        }, 5000);
+        }, 3000);
 
         return () => {
             if (script.parentNode) {
