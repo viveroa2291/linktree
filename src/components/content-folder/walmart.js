@@ -1,21 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Walmart = () => {
-  useEffect(() => {
-    // Create and append the script
-    const script = document.createElement('script');
-    script.src = 'https://www.snapchat.com/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Cleanup
-    return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <div>
       <blockquote

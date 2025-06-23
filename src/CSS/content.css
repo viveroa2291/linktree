@@ -10,6 +10,34 @@
     display: flex;
     justify-content: center;
 }
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+  border: 8px solid white; /* Light gray */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+.loading-text {
+
+    color: red;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-screen p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
 @media (max-width: 800px) {
     .content-header {
         grid-template-columns: repeat(1, 1fr);

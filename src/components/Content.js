@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../CSS/content.css';
 
 import Logan from './content-folder/logan';
@@ -14,11 +14,38 @@ import Crime from './content-folder/crime';
 import Planet from './content-folder/planet';
 import Planet2 from './content-folder/planet2';
 import Airport from './content-folder/airport';
+import Met from './content-folder/met';
 
 function Content () {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://www.snapchat.com/embed.js';
+        script.async = true;
+
+        script.onload = () => setIsLoading(false);
+        const timeout = setTimeout(() => {
+            setIsLoading(false);
+        }, 5000);
+
+        return () => {
+            if (script.parentNode) {
+                script.parentNode.removeChild(script);
+            }
+            clearTimeout(timeout);
+        };
+    }, []);
+
     return (
         <div>
-            <div className="content-header">
+            {isLoading ? (
+                <div className="loading-screen">
+                    <div className="spinner"></div>
+                    <p>Loading Content...</p>
+                </div>
+            ) : (
+                <div className="content-header">
                 <span className="snapchat"><Logan/></span>
                 <span className="snapchat"><Logan2/></span>
                 <span className="snapchat"><Nikki/></span>
@@ -32,7 +59,9 @@ function Content () {
                 <span className="snapchat"><Planet/></span>
                 <span className="snapchat"><Planet2/></span>
                 <span className="snapchat"><Airport/></span>
+                <span className="snapchat"><Met/></span>
             </div>
+            )}
         </div>
     )
 }
