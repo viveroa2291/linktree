@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 const Crime = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
   useEffect(() => {
     // Create and append the script
     const script = document.createElement('script');
@@ -9,18 +8,19 @@ const Crime = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    const mediaQuery = window.matchMedia('(max-width: 800px)');
-    const handleResize = () => setIsMobile(mediaQuery.matches);
-    mediaQuery.addEventListener('change', handleResize);
     // Cleanup
     return () => {
       if (script.parentNode) {
         script.parentNode.removeChild(script);
       }
-      mediaQuery.removeEventListener('change', handleResize);
     };
   }, []);
-const embedStyle = `border-radius: 20px; width: ${isMobile ? '100vw' : '21vw'}; height: 650px;`
+const embedStyle = `border-radius: 20px;
+                    height: 650px;
+                    box-sizing: border-box;
+                    @media(max-width: 850px) {
+                      width: 100vw;
+                    };`
   return (
     <div>
       <blockquote

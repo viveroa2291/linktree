@@ -14,6 +14,7 @@ import Content from './components/Content';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { SocialIcon } from 'react-social-icons';
+import Memories from './components/Memories';
 
 library.add(faEnvelope);
 function Body() {
@@ -21,6 +22,22 @@ function Body() {
     const [snapchatFollowers, setSnapchatFollowers] = useState('Loading...');
     const [twitterFollowers, setTwitterFollowers] = useState('Loading...');
     const [instagramFollowers, setInstagramFollowers] = useState('Loading...');
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+    const [refreshKey, setRefreshKey] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const newIsMobile = window.innerWidth <= 800;
+            if(newIsMobile !== isMobile) {
+                setIsMobile(newIsMobile)
+                    if(activeSection === 'content') {
+                        setRefreshKey(prev => prev + 1);
+                    }
+                }
+            };
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize); 
+        }, [isMobile, activeSection]);
 
     useEffect(() => {
         fetch('http://localhost:3001/api/snap-followers')
@@ -98,6 +115,7 @@ function Body() {
                 <a className='link' href='#projects' onClick={() => handleSectionClick('projects')}>Projects</a>
                 <a className='link' href='#lenses' onClick={() => handleSectionClick('lenses')}>Lenses</a>
                 <a className='link' href='#content' onClick={() => handleSectionClick('content')}>Content</a>
+                <a className='link' href='#memories' onClick={() => handleSectionClick('memories')}>Memories</a> 
             </div>
             <div className="social-media-headers" id="social-media-headers">
                 <SocialIcon className='header-icons' url='https://stackoverflow.com/users/10572727/adan-vivero'/>
@@ -115,6 +133,7 @@ function Body() {
                 {activeSection === 'projects' && <Projects/>}
                 {activeSection === 'lenses' && <Lenses/>}
                 {activeSection === 'content' && <Content/>}
+                {activeSection === 'memories' && <Memories/>}
             </div>
         </div>
     )

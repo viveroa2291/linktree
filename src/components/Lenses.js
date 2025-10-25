@@ -40,6 +40,7 @@ import greece from '../snapchat-lenses/greece.svg';
 import ireland from '../snapchat-lenses/ireland.svg';
 import saudi from '../snapchat-lenses/saudi.svg';
 import russia from '../snapchat-lenses/russia.svg';
+import { FormSelect } from "react-bootstrap";
 import '../CSS/lense.css';
 function Lenses () {
     const[selectedOption, setSelectedOption] = useState('all');
@@ -49,6 +50,7 @@ function Lenses () {
     };
     return(
         <div>
+          <FormSelect value={'all'}></FormSelect>
             <h2 className='lense-header'>Snapchat Lenses</h2>
             <p className='lense-header'>Here are my Snapchat lenses</p>
           <select onChange={handleSelectLense} className='options'>
