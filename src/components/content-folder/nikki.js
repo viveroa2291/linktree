@@ -28,7 +28,7 @@ const embedStyle = `border-radius: 20px;
         className="snapchat-embed"
         data-snapchat-embed-url="https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYYXdiZ2Jsa2N5AYicmwhSAYicmwehAAAAAQ/embed"
         data-snapchat-embed-title="Give It To Me x Promiscuous (Remix)"
-        data-snapchat-embed-style={embedStyle} // This is the line of code that fixed my error
+        data-snapchat-embed-style={embedStyle}
       ></blockquote>
     </div>
   );
