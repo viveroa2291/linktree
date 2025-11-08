@@ -15,6 +15,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { SocialIcon } from 'react-social-icons';
 import Memories from './components/Memories';
+import Clips from './components/Clips';
 
 library.add(faEnvelope);
 function Body() {
@@ -116,6 +117,7 @@ function Body() {
                 <a className='link' href='#lenses' onClick={() => handleSectionClick('lenses')}>Lenses</a>
                 <a className='link' href='#content' onClick={() => handleSectionClick('content')}>Content</a>
                 <a className='link' href='#memories' onClick={() => handleSectionClick('memories')}>Memories</a> 
+                <a className='link' href='#clips' onClick={() => handleSectionClick('clips')}>Clips</a>
             </div>
             <div className="social-media-headers" id="social-media-headers">
                 <SocialIcon className='header-icons' url='https://stackoverflow.com/users/10572727/adan-vivero'/>
@@ -134,6 +136,7 @@ function Body() {
                 {activeSection === 'lenses' && <Lenses/>}
                 {activeSection === 'content' && <Content/>}
                 {activeSection === 'memories' && <Memories/>}
+                {activeSection === 'clips' && <Clips/>}
             </div>
         </div>
     )
