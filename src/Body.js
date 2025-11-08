@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './body.css';
 import './CSS/follower.css'
@@ -23,22 +23,6 @@ function Body() {
     // const [snapchatFollowers, setSnapchatFollowers] = useState('Loading...');
     // const [twitterFollowers, setTwitterFollowers] = useState('Loading...');
     // const [instagramFollowers, setInstagramFollowers] = useState('Loading...');
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
-    const [refreshKey, setRefreshKey] = useState(0);
-
-    useEffect(() => {
-        const handleResize = () => {
-            const newIsMobile = window.innerWidth <= 800;
-            if(newIsMobile !== isMobile) {
-                setIsMobile(newIsMobile)
-                    if(activeSection === 'content') {
-                        setRefreshKey(prev => prev + 1);
-                    }
-                }
-            };
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize); 
-        }, [isMobile, activeSection]);
 
     // useEffect(() => {
     //     fetch('http://localhost:3001/api/snap-followers')
